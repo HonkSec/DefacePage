@@ -1,150 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta property="og:title" content="P4WN3D" />
-        <meta property="og:description" content="HonkSec is honking at your base!!" />
-        <meta property="og:image" content="https://i.ibb.co/YFqngvtq/honktheplanet.png" />
-        <script>
-            let text = "HonkSec is here.";
-            let i = 0;
-            function type() {
-                if (i < text.length) {
-                    document.title = text.substring(0, i + 1);
-                    i++;
-                    setTimeout(type, 100);
-                }
-            }
-            type();
-        </script>
 
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+<!-- Head -->
+<head>
 
-        <style>
-            body {
-                margin: 0;
-                height: 100vh;
-                overflow: hidden;
-                color: white;
-                background: white;
-                background-color: white;
-                position: relative;
-                display: none;
-            }
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta property="og:title" content="P4WN3D" />
+    <meta property="og:description" content="HonkSec is honking at your base!!" />
+    <meta property="og:image" content="https://i.ibb.co/YFqngvtq/honktheplanet.png" />
 
-            .center-header {
-                position: absolute;
-                top: 5%;
-                left: 50%;
-                transform: translateX(-50%);
-                text-align: center;
-                z-index: 15;
+    <!-- Script -->
+    <script>
+        let text = "HonkSec is here.";
+        let i = 0;
+        function type() {
+            if (i < text.length) {
+                document.title = text.substring(0, i + 1);
+                i++;
+                setTimeout(type, 100);
             }
+        }
+        type();
+    </script>
 
-            .img-container {
-                position: relative;
-                overflow: hidden;
-                height: 350px;
-                max-height: 350x;
-            }
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
 
-            .img {
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-                transform: translateX(-50%) scale(0.6);
-                transform-origin: bottom center;
-                width: auto;
-                height: auto;
-                display: block;
-                pointer-events: none;
-                user-select: none;
-                -webkit-user-drag: none;
-            }
+    <!-- Body -->
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+            color: white;
+            background: white;
+            background-color: white;
+            position: relative;
+        }
 
-            .pawned {
-                font-family: "Michroma", sans-serif;
-                font-size: 20px;
-                margin-top: -30px;
-                color: black;
-                z-index: 3;
-                position: relative;
-                white-space: nowrap;
-            }
+        .center-header {
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            z-index: 15;
+        }
 
-            .pawned span {
-                color: red;
-            }
+        .img-container {
+            position: relative;
+            overflow: hidden;
+            height: 350px;
+            max-height: 350x;
+        }
 
-            .greet {
-                font-family: "Michroma", sans-serif;
-                font-size: 12px;
-                font-weight: 600;
-                margin-top: 20px;
-                color: black;
-                z-index: 3;
-                position: relative;
-            }
+        .img {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%) scale(0.6);
+            transform-origin: bottom center;
+            width: auto;
+            height: auto;
+            display: block;
+            pointer-events: none;
+            user-select: none;
+            -webkit-user-drag: none;
+        }
 
-            .member {
-                font-family: "Michroma", sans-serif;
-                font-size: 12px;
-                font-weight: 600;
-                margin-top: 20px;
-                color: black;
-                z-index: 3;
-                position: relative;
-            }
+        .pawned {
+            font-family: "Michroma", sans-serif;
+            font-size: 20px;
+            margin-top: -30px;
+            color: black;
+            z-index: 3;
+            position: relative;
+            white-space: nowrap;
+        }
 
-            .quote {
-                font-family: "Michroma", sans-serif;
-                font-size: 14px;
-                font-weight: 600;
-                margin-top: 20px;
-                color: black;
-                z-index: 3;
-                position: relative;
-                white-space: nowrap;
-            }
+        .pawned span {
+            color: red;
+        }
 
-            .quote span {
-                color: red;
-            }
+        .greet {
+            font-family: "Michroma", sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            margin-top: 20px;
+            color: black;
+            z-index: 3;
+            position: relative;
+        }
 
-            .normal {
-                font-family: "Michroma", sans-serif;
-                font-size: 12px;
-                font-weight: 600;
-                margin-top: -10px;
-                color: black;
-                z-index: 3;
-                position: relative;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="center-header">
-            <div class="img-container">
-                <img class="img" src="https://i.ibb.co/jvGmrqzx/Honk-Sec-Logo.png" alt="HonkSec Logo" oncontextmenu="return false;">
-            </div>
-            <div class="pawned">Hacked by <span>R3p0lyo</span></div>
-            <div class="member">
-                We are HonkSec
-                <p>
-                    Xp0rm4n - Kuneh0 - R3p0lyo - XShadow - ShadowX - Smurfy - 3L3V4T0R - Zapster
-                </p>
-            </div>
-            <div class="quote">
-                <span>"Serving high-quality chaos, proudly made for fun."</span>
-            </div>
-            <div class="greet">
-                Greetings to
-                <p>
-                    LulzSec - ClownSec - Pinoy LulzSec - Pinoy ClownSec - Pinoy HulkSec - Anonymous - AntiSec - TrollSec
-                </p>
-            </div>
+        .member {
+            font-family: "Michroma", sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            margin-top: 20px;
+            color: black;
+            z-index: 3;
+            position: relative;
+        }
+
+        .quote {
+            font-family: "Michroma", sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            margin-top: 20px;
+            color: black;
+            z-index: 3;
+            position: relative;
+            white-space: nowrap;
+        }
+
+        .quote span {
+            color: red;
+        }
+
+        .normal {
+            font-family: "Michroma", sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            margin-top: -10px;
+            color: black;
+            z-index: 3;
+            position: relative;
+        }
+    </style>
+</head>
+
+<!-- Body -->
+<body>
+    <div class="center-header">
+        <div class="img-container">
+            <img class="img" src="https://i.ibb.co/jvGmrqzx/Honk-Sec-Logo.png" alt="HonkSec Logo" oncontextmenu="return false;">
         </div>
-    </body>
+        <div class="pawned">Hacked by <span>4steroth</span></div>
+        <div class="member">
+            We are HonkSec
+            <p>
+                Xp0rm4n - Kuneh0 - 4steroth - XShadow - ShadowX - Smurfy - 3L3V4T0R - Zapster
+            </p>
+        </div>
+        <div class="quote">
+            <span>"Serving high-quality chaos, proudly made for fun."</span>
+        </div>
+        <div class="greet">
+            Greetings to
+            <p>
+                LulzSec - ClownSec - Pinoy LulzSec - Pinoy ClownSec - Pinoy HulkSec - Anonymous - AntiSec - TrollSec
+            </p>
+        </div>
+    </div>
+</body>
 </html>
