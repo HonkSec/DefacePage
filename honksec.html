@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta property="og:title" content="HonkSec" />
     <meta property="og:description" content="HonkSec is honking at your base!!" />
-    <meta property="og:image" content="https://i.ibb.co/gbqFn5nf/Meta-Honk-Sec.png" />
+    <meta property="og:image" content="https://i.ibb.co/YFqngvtq/honktheplanet.png" />
 
     <!-- Typewriter Effect on Document Title -->
     <script>
@@ -34,7 +34,7 @@
         body {
             margin: 0;
             height: 100vh;
-            overflow: auto;
+            overflow: hidden;
             background-color: white;
         }
         .center-header {
@@ -47,21 +47,29 @@
         }
         .img {
             position: absolute;
-            top: -35%;
+            top: 0;
             left: 50%;
             transform: translateX(-50%) scale(0.6);
             transform-origin: top center;
             width: 800px;
-            height: 800px;
+            height: 470px;
             pointer-events: none;
             user-select: none;
             -webkit-user-drag: none;
+        }
+        .img-container {
+            position: relative;
+            overflow: hidden;
+            object-fit: cover;
+            object-position: center top;
+            height: 600px;
+            max-height: 480x;
         }
         .header {
             font-family: "Orbitron", sans-serif;
             font-weight: 400;
             font-size: 30px;
-            margin-top: 33%;
+            margin-top: -45%;
             color: black;
             white-space: nowrap;
         }
@@ -95,8 +103,10 @@
 
 <!-- Body -->
 <body>
-    <img class="img" src="https://i.ibb.co/ZzFzvCK6/HonkSec.png" alt="HonkSec Logo" oncontextmenu="return false;">
     <div class="center-header">
+        <div class="img-container">
+            <img class="img" src="https://i.ibb.co/PZxwHXrP/HonkSec.jpg" alt="HonkSec" oncontextmenu="return false;">
+        </div>
         <div class="header">Hacked by <span>4steroth</span></div>
         <div class="greets">
             <p>We are HonkSec!</p>
@@ -116,5 +126,4 @@
         </a>
     </div>
 </body>
-
 </html>
