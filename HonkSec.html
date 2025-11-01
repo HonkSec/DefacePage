@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+<head>
+
+    <!-- Html Metadata -->
+    <meta charset="UTF-8">
+    <meta property="og:title" content="HonkSec" />
+    <meta property="og:description" content="HonkSec is honking at your base!!" />
+    <meta property="og:image" content="https://i.ibb.co/YFqngvtq/honktheplanet.png" />
+
+    <!-- Typewriter Effect on Document Title -->
+    <script>
+        let text = "P4WN3D BY HONKSEC!";
+        let i = 0;
+        function type() {
+            if (i < text.length) {
+                document.title = text.substring(0, i + 1);
+                i++;
+                setTimeout(type, 100);
+            }
+        }
+        type();
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- Html Style -->
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            overflow: auto;
+            background-color: white;
+        }
+        .center-header {
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            z-index: 15;
+        }
+        .img {
+            position: absolute;
+            top: -35%;
+            left: 50%;
+            transform: translateX(-50%) scale(0.6);
+            transform-origin: top center;
+            width: 800px;
+            height: 800px;
+            pointer-events: none;
+            user-select: none;
+            -webkit-user-drag: none;
+        }
+        .header {
+            font-family: "Orbitron", sans-serif;
+            font-weight: 400;
+            font-size: 30px;
+            margin-top: 33%;
+            color: black;
+            white-space: nowrap;
+        }
+        .header span {
+            color: red;
+        }
+        .greets {
+            font-family: "Courier Prime", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            margin-top: 0;
+            color: black;
+            white-space: nowrap;
+        }
+        .quote {
+            margin-top: 5%;
+            margin-bottom: 5%;
+            font-family: "Michroma", sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: red;
+            white-space: nowrap;
+        }
+        .link {
+            font-family: 'Orbitron', sans-serif;
+            text-decoration:none;
+            color: blue;
+        }
+    </style>
+</head>
+
+<!-- Body -->
+<body>
+    <img class="img" src="https://i.ibb.co/ZzFzvCK6/HonkSec.png" alt="HonkSec Logo" oncontextmenu="return false;">
+    <div class="center-header">
+        <div class="header">Hacked by <span>4steroth</span></div>
+        <div class="greets">
+            <p>We are HonkSec!</p>
+            <p>
+                Xp0rm4n - Astra - 4steroth - XShadow - ShadowX - Smurfy - 3L3V4T0R - Zapster
+            </p>
+            <p>
+                Pinoy Lulzsec - Pinoy Clownsec - Pinoy Hulksec
+            </p>
+        </div>
+        <div class="quote">
+            <span>“Honking at your security, leaving a trail of pure chaos for the lulz.”</span>
+        </div>
+        <a href="https://facebook.com/HonkSec" class="link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" alt="Facebook" style="width:24px; height:24px; vertical-align:middle; margin-right:8px; position: relative;">
+            Follow us on Facebook
+        </a>
+    </div>
+</body>
+
+</html>
